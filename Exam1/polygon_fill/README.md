@@ -18,4 +18,4 @@
 - 控制台输入命令 `sh main.sh`
 
 ## 实验效果
-![](test.png)
+![](polygon_fill.png)

@@ -172,7 +172,7 @@ void Initscene() {
 
 }
 
-void GLCube(){
+void drawface(){
     for (int i = 0; i < m_pic.F.size(); i++){
         glBegin(GL_TRIANGLES);
         for(int j = 0; j < 3; j++){
@@ -202,7 +202,7 @@ void display()
     glRotatef(y_rotate, 0.0f, 1.0f, 0.0f);
     glScalef(scale, scale, scale);
 
-    GLCube();
+    drawface();
 
     glFlush();
     glutSwapBuffers();

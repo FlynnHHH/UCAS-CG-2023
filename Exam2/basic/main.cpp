@@ -134,7 +134,7 @@ void Initscene() {
 
 }
 
-void GLCube(){
+void drawface(){
     for (int i = 0; i < m_pic.F.size(); i++){
         glBegin(GL_TRIANGLES);
         for(int j = 0; j < 3; j++){
@@ -160,7 +160,7 @@ void display()
     glLoadIdentity();
     glOrtho(-1.0f, 1.0f, -1.0f, 1.0f, -1.0f, 1.0f);
 
-    GLCube();
+    drawface();
 
     glFlush();
     glutSwapBuffers();
